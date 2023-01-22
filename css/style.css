@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 1000px;
+}
+
+.nav
+{
+    background-color: #333;
+}
+
+.nav ul
+{
+    display: flex;
+    color: #fff;
+}
+
+.nav ul li
+{
+    padding: 15px;
+    border-right: 1px solid #fff;
+}
+
+.nav ul li:last-child
+{
+    border-right: none;
+}
+
+.nav ul li:hover
+{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.nav ul li a
+{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.nav ul li.active
+{
+    color: rgb(0, 99, 180);
+    background-color: #ccc;
+}
+
+#section
+{
+    display:flex
+}
+
+#section.center
+{
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-nav
+{
+    width: 300px;
+    border: 1px solid black;
+}
+
+.side-nav ul li
+{
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.side-nav ul li:hover
+{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.side-nav ul li.active
+{
+    background-color: rgb(0, 99, 180);
+    color: #fff;
+}
+
+.content
+{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.card
+{
+    border: 1px solid black;
+    margin: 15px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.card h2
+{
+    background-color: #ccc;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid black;
+}
+
+.card h3, .card h4
+{
+    padding: 5px 15px;
+}
+
+#section form
+{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+    width: 400px;
+}
+
+.form-control
+{
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+#section form button,
+.random-values
+{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.alert
+{
+    padding: 15px;
+    border:1px solid #ccc;
+    margin: 15px;
+    width: 400px;
+}
+
+.alert-danger
+{
+    color: red;
+    border-color: red;
+    background-color: rgb(252, 235, 235);
+}
+
+.alert-success
+{
+    color: green;
+    border-color: green;
+    background-color: rgb(197, 226, 196);
+}
+
+#section form.hide, .hide {
+    display: none;
+}

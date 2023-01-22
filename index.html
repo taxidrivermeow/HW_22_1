@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/core.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <li id="productsLink" class="active">Products</li>
+                <li id="addLink">Add product</li>
+                <input type="text" name='search' placeholder="search">
+            </ul>
+        </div>
+        <div id="section">
+            <div class="side-nav">
+                <ul></ul>
+            </div>
+            <div class="content">
+
+            </div>
+            <form action="#" class="hide">
+                <input class="form-control" type="text" name="title"
+                       placeholder="Type product title">
+                <input class="form-control" type="text" name="manufacture"
+                       placeholder="Type manufacture">
+                <input class="form-control" type="number" name="price" step="0.01"
+                       placeholder="Type price">
+                <select class="form-control" name="type" id="type"></select>
+                <div>
+                  <input id="extra" class="form-control" type="number" name="fat"
+                         placeholder="Type fat">
+                </div>
+                <button>add</button>
+                <div class="random-values" id="random-values">Random values</div><br>
+                <div id="notifications"></div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
